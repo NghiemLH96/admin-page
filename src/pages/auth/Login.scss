@@ -9,13 +9,48 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(-35deg,#FFFFFF,$primary-color);
+    background: url("https://firebasestorage.googleapis.com/v0/b/admin-4f88c.appspot.com/o/AC21PJ.jpg?alt=media&token=74a04951-b2a0-49df-9345-8e8a8eb386f8");
     .auth__form{
-        width: 300px;
-        height: 400px;
-        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #FFFFFF;
+        background-color: rgba(181, 177, 177, 0.108);
+        backdrop-filter: "blur";
         overflow: hidden;
         border-radius: 10px;
         box-shadow: 5px 5px 8px black;
+        padding: 40px;
+        h2{
+            font-size: 30px;
+            padding: 10px;
+        }
+        label{
+            display: inline-block;
+            width: 80px;
+            padding: 10px 0px;
+            font-size: 15px;
+        }
+        input{
+            height: 25px;
+            width: 200px;
+            padding: 10px 0px;
+            outline: none;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            margin: 10px 0px;
+            background: linear-gradient(90deg,#e6ffff,#8193e8 51%,#e6ffff)var(--x, 0)/ 200%;
+            color: #FFFFFF;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: 1s;
+            &:hover{
+                --x:100%;
+            }
+        }
     }
 }
